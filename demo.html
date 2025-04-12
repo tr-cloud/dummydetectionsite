@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fraud Detection | Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Live Fraud Detection Demo</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="demo.html">Demo</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Enter Your Transaction Details</h2>
+    <form id="fraudForm">
+      <label>Transaction Amount (₹):</label>
+      <input type="number" id="amount" required>
+
+      <label>Location:</label>
+      <input type="text" id="location" required>
+
+      <label>Device Type:</label>
+      <input type="text" id="device" required>
+
+      <label>Time:</label>
+      <input type="datetime-local" id="time" required>
+
+      <button type="submit">Check for Fraud</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    &copy; 2025 SecurePay Solutions. All rights reserved.
+  </footer>
+</body>
+</html>
